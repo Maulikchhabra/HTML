@@ -125,3 +125,30 @@ else if(age>=20 && age<30){
 else{
   console.log(firstName +" "+"is a man");
 }
+
+//Ternary operator and swith statements//
+//Ternary operator//
+firstName ="John";
+age =16;
+
+age>=18 ? console.log(firstName +" drinks beer"):console.log(firstName+" drinks juice");
+
+age =22;
+age>=18 ? console.log(firstName +" drinks beer"):console.log(firstName+" drinks juice");
+
+var drink =age>=18 ? "beer":"juice"; //alternate way//
+console.log(drink);
+   //changing age to 14 years//
+age =14;
+drink =age>=18 ? "beer":"juice";
+console.log(age + drink);
+
+/*
+if(age>=18){
+  drink="beer";
+}
+else{
+  drink="juice";
+}
+Can also use it
+*/
