@@ -182,3 +182,15 @@ if(height||height ===0){
 else {
   console.log("Variable has not been defined");
 }
+
+     //Equality operators//
+if(height=="23"){
+  console.log("== does type coercion");
+}
+//== performs type coercion and === is strictly equal//
+/*
+23 =="23" type coercion
+23 == 23  simple holds true
+23 ==="23" strictly equality (false)
+23 ===23  strictly equal (true)
+*/
