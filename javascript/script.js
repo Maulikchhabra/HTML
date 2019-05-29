@@ -20,3 +20,17 @@ console.log(job);
 
 var married=false;
 console.log(married);
+
+//single line comment//
+
+/*
+multiline comment
+
+*/
+/*special types to show a message or output
+
+alert(firstName +" "+lastName +" "+ age);
+
+prompt("What is his job?");
+
+*/
