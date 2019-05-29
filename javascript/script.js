@@ -152,3 +152,14 @@ else{
 }
 Can also use it
 */
+
+//Switch statement//
+job ="teacher";
+switch (job)
+{
+  case "teacher":console.log(firstName+" teaches kids how to code");
+                break;
+  case "driver":console.log(firstName+" drives the school bus");
+                break;
+  default:console.log(firstName+" has no job");
+}
