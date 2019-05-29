@@ -163,3 +163,22 @@ switch (job)
                 break;
   default:console.log(firstName+" has no job");
 }
+
+//Truthy and Falsy values and equality operators//
+//Falsy values:undefined,null,0,"",NaN//
+//truthy values:not falsy ones//
+var height;//case 1//
+if(height||height ===0){
+  console.log("Variable is defined");
+}
+else {
+  console.log("Variable has not been defined");
+}
+
+height =23;//case 2//
+if(height||height ===0){
+  console.log("Variable is defined");
+}
+else {
+  console.log("Variable has not been defined");
+}
