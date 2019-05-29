@@ -76,3 +76,15 @@ console.log(average);//precedence of brackets is greater than / //
 var x,y;
 x= y=(3+5)*4-6; //26//
 console.log(x,y);
+
+      //More operators//
+x=x+2;//Changed to 28//
+console.log(x);
+x += 2; //28+2=30//
+console.log(x);
+// x=x+2 and x+=2 performs same operations//
+//for increasing or decreasing value just by 1 use x++ and x--//
+y++;//27//
+console.log(y);
+y--;//26//
+console.log(y);
