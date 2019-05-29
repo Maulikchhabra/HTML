@@ -88,3 +88,24 @@ y++;//27//
 console.log(y);
 y--;//26//
 console.log(y);
+
+//if else statements//
+firstName ="John";
+var civilStatus ="single";
+
+if(civilStatus ==="married")
+{
+  console.log(firstName +" "+ "is married");
+}
+else {
+  console.log(firstName +" "+"will hopefully marry soon");
+}
+
+var isMarried =true;
+if(isMarried)
+{
+  console.log(firstName +" "+ "is married");
+}
+else {
+  console.log(firstName +" "+"will hopefully marry soon");
+}
