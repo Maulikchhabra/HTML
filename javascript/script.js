@@ -57,3 +57,22 @@ console.log(markOlder);
 console.log(typeof markOlder);
 console.log(typeof ageJohn);
 console.log(typeof firstName);
+
+//Operator precedence starts//
+var now =2019;
+var yearSmith =1989;
+var fullAge =18;
+var ageSmith =now-yearSmith;
+var ageHarry =35;
+       //Multiple operators//
+var isFullAge =now-yearSmith >= fullAge;
+console.log(isFullAge);//precedence of - is greater than >=//
+       //Grouping//
+var average =(ageHarry+ageSmith)/2;//with brackets//
+var wrongAverage =ageHarry+ageSmith/2;//without brackets//
+console.log(wrongAverage);//precedence of / is greater tha +//
+console.log(average);//precedence of brackets is greater than / //
+      //Multiple assignments//
+var x,y;
+x= y=(3+5)*4-6; //26//
+console.log(x,y);
