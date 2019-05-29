@@ -221,3 +221,26 @@ yearsUntilRetirement(1990,"John");
 yearsUntilRetirement(2000,"Max");
 yearsUntilRetirement(2010,"Jane");
 yearsUntilRetirement(1940,"Tony");
+
+//Function statements and expressions//
+/*
+function declaration =
+function whatDoYouDo(job,firstName) {
+
+}
+*/
+
+//function expression//
+var whatDoYouDo = function(job,firstName) {
+  switch (job) {
+    case "teacher":return firstName +" teaches kids how to code";
+
+    case "driver":return firstName +" drives school bus";
+
+    case "designer":return firstName +" designs good websites";
+
+    default:return firstName+" does something else";
+
+  }
+}
+console.log(whatDoYouDo("teacher","John")+" and " + whatDoYouDo("driver","Mark"));
