@@ -1,0 +1,3 @@
+The game is same as the Pig Game 1 except for some changes in the functioning of the game.
+HTML and CSS same to  PIg Game 1 
+Changes done in JavaScript to  introduce new functioning..
