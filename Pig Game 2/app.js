@@ -39,3 +39,35 @@ document.querySelector(".btn-roll").addEventListener("click",function() {
      document.getElementById("dice-1").src ="images/dice-"+dice1+".png";
      document.getElementById("dice-2").src ="images/dice-"+dice2+".png";
 
+     //3.update the round score if rolled number was not a 1.//
+     /*
+     if(dice ===6 && lastDice ===6){
+       //player loses score
+       scores[activePlayer] =0;
+       document.querySelector("#score-"+ activePlayer).textContent ="0";
+       nextPlayer();
+     }
+     else if(dice!==1){
+       //add score
+       roundScore +=dice;
+       document.querySelector("#current-" + activePlayer).textContent=roundScore;
+       //roundScore =roundScore+ dice;
+     }
+     else{
+       //next player//
+      nextPlayer();
+     }
+     lastDice =dice;
+     */
+     if(dice1!==1 && dice2!==1){
+       //add score
+       roundScore +=dice1 +dice2;
+       document.querySelector("#current-" + activePlayer).textContent=roundScore;
+       //roundScore =roundScore+ dice;
+     }
+     else{
+       //next player//
+      nextPlayer();
+     }
+   }
+});
