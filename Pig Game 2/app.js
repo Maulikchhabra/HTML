@@ -12,3 +12,30 @@ init();
 //console.log(x);
 
 document.querySelector(".dice").style.display ="none";
+
+function btn() {
+  //do something here//
+}
+btn();
+
+//document.querySelector(".btn-roll").addEventListener("click",btn);
+
+document.getElementById("score-0").textContent ="0";
+document.getElementById("score-1").textContent ="0";
+document.getElementById("current-0").textContent ="0";
+document.getElementById("current-1").textContent ="0";
+
+
+
+document.querySelector(".btn-roll").addEventListener("click",function() {
+   if(gamePlaying){
+     //1. random number//
+     var dice1 =Math.floor(Math.random()*6) +1;
+     var dice2 =Math.floor(Math.random()*6) +1;
+
+     //2.display the result
+     document.getElementById("dice-1").style.display ="block";
+     document.getElementById("dice-2").style.display ="block";
+     document.getElementById("dice-1").src ="images/dice-"+dice1+".png";
+     document.getElementById("dice-2").src ="images/dice-"+dice2+".png";
+
