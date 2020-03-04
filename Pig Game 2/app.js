@@ -71,3 +71,41 @@ document.querySelector(".btn-roll").addEventListener("click",function() {
      }
    }
 });
+
+document.querySelector(".btn-hold").addEventListener("click",function(){
+     if(gamePlaying){
+       //Add current score to global score
+       scores[activePlayer] += roundScore;
+      //scores[activePlayer] =scores[active] +roundScore;
+
+      //Update the UI
+      document.querySelector("#score-"+ activePlayer).textContent =scores[activePlayer];
+
+      var input =document.querySelector(".final-score").value;
+      var winningScore;
+      //console.log(input);
+
+      //undefined ,0,null or " " are COERCED to flase//
+      //anything else is COERCED true//
+      if(input){
+         winningScore =input;
+      }
+      else{
+        winningScore =100;
+      }
+
+      //Check if player won the game
+      if(scores[activePlayer] >= winningScore){
+        document.querySelector("#name-"+activePlayer).textContent ="Winner!";
+        document.getElementById("dice-1").style.display ="none";
+        document.getElementById("dice-2").style.display ="none";
+        document.querySelector(".player-"+activePlayer +"-panel").classList.add("winner");
+        document.querySelector(".player-"+activePlayer +"-panel").classList.remove("winner");
+        gamePlaying =false;
+      }
+      else{
+        //next player//
+        nextPlayer();
+      }
+     }
+});
